@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+.venv/
+.venv-1/
+env/
+ENV/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated/temporary
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Project-specific: generated reports
+release/starter-kit/reports/*.json

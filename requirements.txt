@@ -1,0 +1,13 @@
+# CIE/CSIF uses only Python standard library modules
+# No external dependencies required
+#
+# Core modules used:
+# - math: Trigonometric and phase geometry calculations
+# - json: Serialization for crystal banks and provenance
+# - dataclasses: Data structure definitions
+# - typing: Type hints
+# - hashlib: Checksums for reproducibility
+# - time: Benchmarking and performance measurement
+# - pathlib: Cross-platform file operations
+# - subprocess: Running demo scripts
+

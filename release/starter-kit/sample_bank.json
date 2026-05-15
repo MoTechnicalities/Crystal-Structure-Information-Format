@@ -1,0 +1,115 @@
+{
+  "checksum_sha256": "412eaecf3924ff52993a687216d68ddb86978a36d16c05bd899ba2b69d593a5b",
+  "format": "csif-crystal-bank",
+  "format_version": "1",
+  "payload": {
+    "created_at": 1778857174.4409091,
+    "crystals": {
+      "whale_coherent_en": {
+        "edges": [
+          {
+            "created_at": 1778857174.4409184,
+            "object": "Warm-blooded",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Mammal"
+          },
+          {
+            "created_at": 1778857174.4409127,
+            "object": "Mammal",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Whale"
+          },
+          {
+            "created_at": 1778857174.4409218,
+            "object": "Warm-blooded",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Whale"
+          }
+        ],
+        "label": "whale_coherent_en"
+      },
+      "whale_coherent_es": {
+        "edges": [
+          {
+            "created_at": 1778857174.4409297,
+            "object": "Mamifero",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Ballena"
+          },
+          {
+            "created_at": 1778857174.4409318,
+            "object": "Sangre-caliente",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Ballena"
+          },
+          {
+            "created_at": 1778857174.4409308,
+            "object": "Sangre-caliente",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Mamifero"
+          }
+        ],
+        "label": "whale_coherent_es"
+      },
+      "whale_contradictory_en": {
+        "edges": [
+          {
+            "created_at": 1778857174.4409266,
+            "object": "Warm-blooded",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Mammal"
+          },
+          {
+            "created_at": 1778857174.4409237,
+            "object": "Mammal",
+            "phase": 0.5235987755982987,
+            "polarity": "true",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Whale"
+          },
+          {
+            "created_at": 1778857174.4409282,
+            "object": "Warm-blooded",
+            "phase": -2.0943951023931957,
+            "polarity": "false",
+            "relation": "is_a",
+            "source": "demo",
+            "subject": "Whale"
+          }
+        ],
+        "label": "whale_contradictory_en"
+      }
+    },
+    "name": "starter-kit-demo",
+    "relation_base_phases": {
+      "causes": 0.7853981633974483,
+      "has_property": 0.6283185307179586,
+      "is_a": 0.5235987755982988,
+      "supports": 0.4487989505128276
+    },
+    "updated_at": 1778857174.4409325,
+    "version": "0.1.0"
+  }
+}
