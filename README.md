@@ -6,6 +6,14 @@ The Crystal Information Engine (CIE) and Crystal Structure Information Format (C
 - **Auditable provenance**: Every knowledge claim and contradiction is traceable to its source and logical path.
 - **Extreme organizability**: Knowledge is organized into "crystals" and "banks"—modular, composable, and federated units that can be independently audited and extended.
 
+## Mission Statement
+
+CSIF exists to establish a universal, transparent, and substrate-independent geometry of meaning.
+
+Modern AI systems often operate as black boxes, and biological cognition is bound by physical limits. CSIF provides an open, auditable alternative: a phase-geometric framework for representing knowledge, detecting contradictions, and building coherent reasoning systems across languages, species, and computational architectures.
+
+Read the full mission: [MISSION.md](MISSION.md).
+
 ## What's Included
 
 ### Documentation
@@ -22,6 +30,7 @@ The Crystal Information Engine (CIE) and Crystal Structure Information Format (C
 ### Governance
 - [CONTRIBUTING.md](CONTRIBUTING.md)—contribution guidelines emphasizing reproducibility and auditability.
 - [SECURITY.md](SECURITY.md)—security vulnerability reporting policy.
+- [MISSION.md](MISSION.md)-project mission and long-term commitment.
 
 ## Quick Start
 
