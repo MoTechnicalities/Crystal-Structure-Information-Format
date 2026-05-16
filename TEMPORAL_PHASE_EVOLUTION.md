@@ -117,6 +117,20 @@ The temporal layer makes the LLM→CSIF→outcome→retraining cycle tighter and
 - [ ] Temporal resonance computation: implement expectation over $\eta(t)$ and scheduled $\delta(t)$
 - [ ] Audit trail extension: log all phase corrections with provenance, evidence weight, outcome trigger
 
+## Selective Stochasticity via Time: Deterministic and Probabilistic Control
+
+Absolute determinism is usually preferred for most operations. However, when a random or probabilistic response is required, the time dimension provides a principled mechanism for controlled stochasticity:
+
+- By tying the stochastic term $\eta(t)$ to a specific timestamp or event seed, any "random" outcome becomes reproducible by replaying the same time/seed.
+- This enables full auditability and traceability for every probabilistic decision.
+- The system can switch between strict determinism (fixed $t$ or $\eta$) and controlled stochasticity (varying $t$ or $\eta$) as needed.
+
+**Result:** You get the best of both worlds—LLM-like generativity and full auditability—within the same geometric/temporal framework. This approach allows for:
+
+- Reproducible sampling: Every probabilistic response can be regenerated exactly by specifying the same time/seed.
+- Auditable randomness: All stochastic outcomes are logged and can be traced to their origin.
+- Selective operability: The system can be run in deterministic mode for validation, or in stochastic mode for creative or exploratory tasks, simply by controlling the time/seed input.
+
 ## Philosophical Note
 
 The quantum-like framing is honest in a specific sense: CSIF is not becoming quantum computing. Rather, the mathematical structure—superposition of phase states, probability amplitudes (via $\sigma$), interference patterns (via temporal resonance)—maps naturally onto what knowledge systems need to model: uncertainty, evidence accumulation, and consensus formation. The formalism is already there in the geometry; this extension makes it explicit and tractable.
