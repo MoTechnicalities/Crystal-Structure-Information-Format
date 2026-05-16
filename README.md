@@ -20,6 +20,7 @@ Read the full mission: [MISSION.md](MISSION.md).
 - **Full CIE/CSIF format specification**: [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)—complete mathematical definitions, phase logic, usage protocols, and experiment logs.
 - **Release materials**: Multiple audience variants (general, technical, investor, media, researcher) in [release/](release/).
 - **Technical specification**: [crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md](crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md).
+- **LLM calibration surface contribution**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)—defines CSIF as the inspectable geometric calibration layer between frozen LLM inference and verifiable outcomes.
 
 ### Runnable Code & Experiments
 - **Phase geometry demo**: [crystal-information-engine/scripts/csif_crystal_phase_demo.py](crystal-information-engine/scripts/csif_crystal_phase_demo.py)—minimal example showing phase geometry and resonance.
@@ -101,6 +102,7 @@ Licensed under Apache 2.0. See [LICENSE](LICENSE) for details.
 
 - **For technical details**: [crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md](crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md)
 - **For full disclosure**: [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)
+- **For LLM calibration architecture**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)
 - **For release planning**: [release/ROADMAP.md](release/ROADMAP.md)
 - **For questions or collaboration**: Open an issue or contact the maintainer.
 
