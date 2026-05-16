@@ -22,6 +22,7 @@ Read the full mission: [MISSION.md](MISSION.md).
 - **Technical specification**: [crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md](crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md).
 - **LLM calibration surface contribution**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)—defines CSIF as the inspectable geometric calibration layer between frozen LLM inference and verifiable outcomes.
 - **Temporal phase evolution**: [TEMPORAL_PHASE_EVOLUTION.md](TEMPORAL_PHASE_EVOLUTION.md)—extends CSIF with time-dependent phase trajectories, confidence bands, and lightweight online learning for knowledge that evolves with evidence.
+- **Temporal phase validation**: [TEMPORAL_PHASE_EVOLUTION_VALIDATION.md](TEMPORAL_PHASE_EVOLUTION_VALIDATION.md)—comprehensive test results validating the temporal phase model across 7 core scenarios (phase reduction, drift, bounding, adaptive thresholds, resonance, nudging, reproducibility).
 
 ### Runnable Code & Experiments
 - **Phase geometry demo**: [crystal-information-engine/scripts/csif_crystal_phase_demo.py](crystal-information-engine/scripts/csif_crystal_phase_demo.py)—minimal example showing phase geometry and resonance.
@@ -105,6 +106,7 @@ Licensed under Apache 2.0. See [LICENSE](LICENSE) for details.
 - **For full disclosure**: [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)
 - **For LLM calibration architecture**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)
 - **For temporal phase evolution**: [TEMPORAL_PHASE_EVOLUTION.md](TEMPORAL_PHASE_EVOLUTION.md)
+- **For temporal phase validation**: [TEMPORAL_PHASE_EVOLUTION_VALIDATION.md](TEMPORAL_PHASE_EVOLUTION_VALIDATION.md)
 - **For release planning**: [release/ROADMAP.md](release/ROADMAP.md)
 - **For questions or collaboration**: Open an issue or contact the maintainer.
 
