@@ -1,4 +1,4 @@
-# Mission Statement - Crystal Semantic Information Format (CSIF)
+# Mission Statement - Crystal Structure Information Format (CSIF)
 
 CSIF exists to establish a universal, transparent, and substrate-independent geometry of meaning.
 

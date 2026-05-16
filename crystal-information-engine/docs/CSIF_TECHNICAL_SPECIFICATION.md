@@ -1,4 +1,4 @@
-# Crystal Semantic Information Format (CSIF)
+# Crystal Structure Information Format (CSIF)
 # Technical Specification (Current Implementation)
 ### Crystal Information Engine (CIE)
 
