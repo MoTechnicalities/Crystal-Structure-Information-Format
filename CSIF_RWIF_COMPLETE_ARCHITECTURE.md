@@ -138,9 +138,7 @@ This division of labor reduces energy cost while increasing transparency and cor
 
 Knowledge is not static. CSIF models evolution deterministically:
 
-$$
-theta(t) = theta0 + delta(t) + sigma(t) * eta(bounded)
-$$
+`theta(t) = theta0 + delta(t) + sigma(t) * eta(bounded)`
 
 The system appears probabilistic to observers because queries at different times yield different results, yet every state is fully reproducible and traceable.
 
