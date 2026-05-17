@@ -90,6 +90,7 @@ CIE/CSIF is the first system to:
 - **Concept extraction**: The format assumes clean input; real-world extraction pipelines from unstructured text are open research areas.
 - **Scale validation**: Current validation is on curated datasets. External-scale validation against independently sourced corpora is in progress.
 - **Deployment**: This release focuses on transparency and reproducibility. Production deployment patterns are still being developed.
+- **Detailed validation boundaries**: For the full five-point engineering and validation gap map (concept extraction, live LLM phase encoding, multi-step nudge convergence, heterogeneous sigma interaction, and external validity), see [Part 10 in the architecture specification](CSIF_RWIF_COMPLETE_ARCHITECTURE.md#part-10-current-validation-boundaries).
 
 See [release/ROADMAP.md](release/ROADMAP.md) for the public development roadmap.
 
