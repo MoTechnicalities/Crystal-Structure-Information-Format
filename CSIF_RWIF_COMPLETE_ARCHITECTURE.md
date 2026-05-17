@@ -233,6 +233,44 @@ Anti-CSIF extends the framework into modeling knowledge and anti-knowledge dynam
 
 ---
 
+## Part 10: Current Validation Boundaries
+
+The following gaps represent open engineering and validation work. They are documented here for transparency and to guide future contributors.
+
+### 10.1 Concept Extraction from Natural Language
+
+The current pipeline extracts concepts using co-occurrence and stopword filtering. This is binary: a concept pair either co-occurs or it does not. The nuanced middle range of phase values (`0.15` to `1.2`) that makes the geometry expressive is not yet produced automatically from raw text. Hedged claims, implicit negation, metaphor, and paraphrase are not reliably handled.
+
+What needs to be built: a richer extraction pipeline that produces graduated phase values from natural language without requiring hand-assigned phases.
+
+### 10.2 Live LLM Phase Encoding
+
+Phase values in current benchmarks and demos are either hand-assigned or constructed from controlled synthetic corpora. The interaction between live LLM-encoded phases and the geometric contradiction mechanism has not yet been tested on genuinely messy real-world text.
+
+What needs to be built: an end-to-end test using LLM-assigned phase values on uncontrolled natural language input, validated against human-labeled ground truth.
+
+### 10.3 Multi-Step Nudge Convergence
+
+The outcome-driven phase nudging mechanism (Test 6 in temporal validation) demonstrates a single correct nudge step. Convergence over many cycles under realistic noise has not been demonstrated.
+
+What needs to be built: a multi-cycle nudge simulation across a realistic knowledge graph showing stable convergence rather than oscillation or drift.
+
+### 10.4 Heterogeneous Sigma Interaction
+
+The adaptive contradiction threshold has been validated in isolation. Behavior across a large knowledge graph with heterogeneous confidence bands (mixed `sigma` distributions across many edges) has not been tested.
+
+What needs to be built: a benchmark with 100+ crystals and 1000+ edges with varied `sigma` values, validating that contradiction detection remains reliable across the full distribution.
+
+### 10.5 External Validity
+
+All benchmark corpora used in validation were constructed by encoding contradictions as anti-phase shifts on composed path targets, meaning the detector was designed to find exactly the signal that was encoded. Protocol v1 (Milestone L) defines the requirements for independently sourced external validation, and the scale-readiness audit (Milestone S) quantified the gap: 144 additional annotation records needed across legal, biomedical, news, and finance domains.
+
+What needs to be built: a full Protocol v1 compliant evaluation using independently sourced documents with blinded human annotation and no leakage between corpus construction and detector design.
+
+These boundaries do not invalidate what has been proven. They define exactly where the next evidence must come from.
+
+---
+
 ## Conclusion
 
 CSIF + RWIF represent a new architectural layer for artificial intelligence, one that combines the expressive power of LLMs with the transparency, auditability, and geometric rigor needed for trustworthy systems.
