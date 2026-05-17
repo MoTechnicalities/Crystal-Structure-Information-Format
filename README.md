@@ -20,6 +20,7 @@ Read the full mission: [MISSION.md](MISSION.md).
 - **Full CIE/CSIF format specification**: [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)—complete mathematical definitions, phase logic, usage protocols, and experiment logs.
 - **Release materials**: Multiple audience variants (general, technical, investor, media, researcher) in [release/](release/).
 - **Technical specification**: [crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md](crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md).
+- **RWIF Crystal Schema V1**: [RWIF_CRYSTAL_SCHEMA_V1.md](RWIF_CRYSTAL_SCHEMA_V1.md)—format specification for crystal-native RWIF storage, temporal phase trajectories, anti-crystal support, and validation rules.
 - **Complete CSIF+RWIF architecture**: [CSIF_RWIF_COMPLETE_ARCHITECTURE.md](CSIF_RWIF_COMPLETE_ARCHITECTURE.md)—unified v2.0 architecture specification covering geometry, storage, computation, temporal dynamics, anti-crystals, and roadmap.
 - **LLM calibration surface contribution**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)—defines CSIF as the inspectable geometric calibration layer between frozen LLM inference and verifiable outcomes.
 - **Temporal phase evolution**: [TEMPORAL_PHASE_EVOLUTION.md](TEMPORAL_PHASE_EVOLUTION.md)—extends CSIF with time-dependent phase trajectories, confidence bands, and lightweight online learning for knowledge that evolves with evidence.
@@ -105,6 +106,7 @@ Licensed under Apache 2.0. See [LICENSE](LICENSE) for details.
 ## Learn More
 
 - **For technical details**: [crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md](crystal-information-engine/docs/CSIF_TECHNICAL_SPECIFICATION.md)
+- **For RWIF crystal format details**: [RWIF_CRYSTAL_SCHEMA_V1.md](RWIF_CRYSTAL_SCHEMA_V1.md)
 - **For full architecture specification**: [CSIF_RWIF_COMPLETE_ARCHITECTURE.md](CSIF_RWIF_COMPLETE_ARCHITECTURE.md)
 - **For full disclosure**: [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)
 - **For LLM calibration architecture**: [CIE_LLM_CALIBRATION_SURFACE.md](CIE_LLM_CALIBRATION_SURFACE.md)
