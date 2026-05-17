@@ -1,0 +1,95 @@
+{
+    "label": "StressTestCrystal",
+    "edges": [
+        {
+            "subject": "Concept1",
+            "relation": "is_a",
+            "object": "Concept2",
+            "phase": 0.5236,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept2",
+            "relation": "causes",
+            "object": "Concept3",
+            "phase": 0.7854,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept3",
+            "relation": "supports",
+            "object": "Concept4",
+            "phase": 0.2618,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept4",
+            "relation": "dispels",
+            "object": "Concept5",
+            "phase": 3.1416,
+            "polarity": "false",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept5",
+            "relation": "antonym",
+            "object": "Concept6",
+            "phase": 3.1416,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept6",
+            "relation": "is_a",
+            "object": "Concept7",
+            "phase": 0.5236,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept7",
+            "relation": "causes",
+            "object": "Concept8",
+            "phase": 0.7854,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept8",
+            "relation": "supports",
+            "object": "Concept9",
+            "phase": 0.2618,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept9",
+            "relation": "dispels",
+            "object": "Concept10",
+            "phase": 3.1416,
+            "polarity": "false",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept10",
+            "relation": "antonym",
+            "object": "Concept11",
+            "phase": 3.1416,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        }
+    ]
+}

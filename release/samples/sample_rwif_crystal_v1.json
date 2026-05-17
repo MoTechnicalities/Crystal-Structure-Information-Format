@@ -1,0 +1,23 @@
+{
+    "label": "SampleCrystal",
+    "edges": [
+        {
+            "subject": "ConceptA",
+            "relation": "is_a",
+            "object": "ConceptB",
+            "phase": 0.5236,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "ConceptB",
+            "relation": "causes",
+            "object": "ConceptC",
+            "phase": 0.7854,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        }
+    ]
+}

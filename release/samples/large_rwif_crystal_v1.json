@@ -1,0 +1,50 @@
+{
+    "label": "LargeTestCrystal",
+    "edges": [
+        {
+            "subject": "Concept1",
+            "relation": "is_a",
+            "object": "Concept2",
+            "phase": 0.5236,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept2",
+            "relation": "causes",
+            "object": "Concept3",
+            "phase": 0.7854,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept3",
+            "relation": "supports",
+            "object": "Concept4",
+            "phase": 0.2618,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept4",
+            "relation": "dispels",
+            "object": "Concept5",
+            "phase": 3.1416,
+            "polarity": "false",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        },
+        {
+            "subject": "Concept5",
+            "relation": "antonym",
+            "object": "Concept6",
+            "phase": 3.1416,
+            "polarity": "true",
+            "source": "test_source",
+            "created_at": 1684358400.0
+        }
+    ]
+}

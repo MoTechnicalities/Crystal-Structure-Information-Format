@@ -276,3 +276,44 @@ class CrystalBank:
             "edge_count": edge_count,
             "relations": sorted(self.relation_base_phases.keys()),
         }
+
+
+class CrystalBankManager:
+    """
+    A manager class to provide higher-level operations for CrystalBank.
+    """
+    def __init__(self):
+        self.bank = CrystalBank(name="DefaultBank")
+
+    def load(self, path: str) -> Crystal:
+        """
+        Load a crystal from a RWIF Crystal V1 file.
+        """
+        with open(path, "r") as file:
+            data = json.load(file)
+            crystal = Crystal(label=data["label"], edges=[ClaimEdge(**edge) for edge in data["edges"]])
+            self.bank.crystals[crystal.label] = crystal
+            return crystal
+
+    def query(self, crystal: Crystal, top_k: int = 5):
+        """
+        Query the bank for crystals most resonant with the given crystal.
+        """
+        # Placeholder implementation for querying resonance
+        return [
+            {
+                "crystal_label": other.label,
+                "resonance": angular_distance(0, 0)  # Replace with actual resonance computation
+            }
+            for other in self.bank.crystals.values()
+        ][:top_k]
+
+    def compute_resonance(self, crystal_a: Crystal, crystal_b: Crystal):
+        """
+        Compute resonance between two crystals.
+        """
+        # Placeholder implementation for resonance computation
+        return {
+            "resonance": angular_distance(0, 0),  # Replace with actual resonance computation
+            "details": "Resonance computation not implemented"
+        }
