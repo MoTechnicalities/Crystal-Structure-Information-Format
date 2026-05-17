@@ -1,4 +1,5 @@
 # Crystal Information Engine (CIE) & CSIF: Auditable Knowledge via Geometric Phase Logic
+![Performance: Sub-millisecond query](https://img.shields.io/badge/performance-sub--millisecond%20query-brightgreen)
 
 The Crystal Information Engine (CIE) and Crystal Structure Information Format (CSIF) represent a breakthrough in knowledge representation: a system where knowledge is not only stored, but made auditable, classifiable, and transparently organized using geometric phase logic. Unlike LLMs, which provide fluent but opaque answers, CIE/CSIF enables:
 
@@ -72,6 +73,27 @@ python3 release/starter-kit/interactive_menu.py
 ```
 
 For more details, see [release/QUICKSTART_AND_VALIDATION.md](release/QUICKSTART_AND_VALIDATION.md).
+
+## Performance & Scale (At a Glance)
+
+This system is built for **auditability and determinism**, not raw throughput. However, its operational performance on standard hardware is production-ready for knowledge-intensive tasks.
+
+| Operation | Scale | Latency | Notes |
+| :--- | :--- | :--- | :--- |
+| **Existing-crystal retrieval** | Single crystal | **0.002 - 0.013 seconds** | Milestones U/V. Cached hot path. |
+| **Resonance query** | 71-crystal bank | **~0.001 seconds (1,034 qps)** | CPU-only, no GPU. |
+| **Crystal build (crystallization)** | 16 nodes, 5 dimensions | **~0.0004 seconds (2,334 crystals/sec)** | Exhaustive torsion check via fundamental cycle basis. |
+| **Multi-path conflict detection** | 20-node graphs | **Sub-second** | Deterministic, auditable trace. |
+| **Bank load (from disk)** | 71 crystals (1.5 MB) | **~0.01 seconds (7,034 crystals/sec)** | Trusted stability scores; no re-computation. |
+
+**Key takeaway:** The system is **I/O bound, not compute bound**. Read operations (query, retrieval) are sub-millisecond to low-millisecond. Write operations (crystallization) are thousands per second. This makes it suitable for real-time agentic workflows and knowledge base operations.
+
+**Scale validation:** Tested up to 20-node graphs and 71-crystal banks. Scaling to 10,000+ nodes and 10,000+ banks is an open engineering challenge (see [release/ROADMAP.md](release/ROADMAP.md) and [Honest Limitations](#honest-limitations) below).
+
+Evidence and reproducibility references:
+- [crystal-information-engine/docs/csif_crystal_phase_milestone.md](crystal-information-engine/docs/csif_crystal_phase_milestone.md)
+- [release/samples/rwif_schema_performance_test_results.md](release/samples/rwif_schema_performance_test_results.md)
+- [release/samples/stress_test_results.md](release/samples/stress_test_results.md)
 
 ## How This Is Organized
 
